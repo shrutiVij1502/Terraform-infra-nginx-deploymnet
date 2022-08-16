@@ -12,7 +12,7 @@ resource "aws_instance" "web" {
 sudo yum update -y
 sudo amazon-linux-extras install nginx1 -y
 sudo service nginx start
-sudo echo "Hii Shruti" >/usr/share/nginx/html/index.html
+sudo echo `curl http://169.254.169.254/latest/meta-data/public-ipv4` >/usr/share/nginx/html/index.html
 EOF
 }
 #creating ssh-key
