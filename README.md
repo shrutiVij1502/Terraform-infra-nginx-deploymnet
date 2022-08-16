@@ -49,5 +49,26 @@ now copy both the files in the /opt/terraform folder (our terraform directory)
 
 ## Step 6 - to create infra file for the creation of the terraform instance 
 
+Now, create a file named as "instance.tf" in the /opt/terraform folder , you can get the same file in the repo 
+
+After that, run the folowing commands to create and apply the terraform changes
+
+```
+terraform init
+terraform plan
+terraform apply
+```
+
+when it gets completed , go to  AWS console and check the instance created and when i hit the public ip of that instance it should be like this:
+
+![image](https://user-images.githubusercontent.com/67600604/184831458-4481d042-7305-49ea-a26b-7d1071e23e06.png)
+
+### Important Note - we have created a new private key for the newly created  
+
+now, to access the new instance using ssh , we need to go into the /opt/terraform folder in our aws server and then run the command ``` ssh -i id_rsa ec2-user@ipaddress``` 
+
+you will be able to get access using the ssh now to your server created via terraform - 
+
+![image](https://user-images.githubusercontent.com/67600604/184835597-a0d93298-a338-4900-8b67-55e8398beabe.png)
 
 
