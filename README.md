@@ -63,7 +63,7 @@ when it gets completed , go to  AWS console and check the instance created and w
 
 ![image](https://user-images.githubusercontent.com/67600604/184831458-4481d042-7305-49ea-a26b-7d1071e23e06.png)
 
-### Important Note - we have created a new private key for the newly created  
+### Important Note - we have created a new private key for the newly created instance
 
 now, to access the new instance using ssh , we need to go into the /opt/terraform folder in our aws server and then run the command ``` ssh -i id_rsa ec2-user@ipaddress``` 
 
