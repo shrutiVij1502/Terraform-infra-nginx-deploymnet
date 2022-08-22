@@ -293,3 +293,10 @@ tags = {
 we should have these files in our folder 
 
 ![image](https://user-images.githubusercontent.com/67600604/185873748-8056fe67-9fb4-442d-ac33-1e8b3b7ca8a0.png)
+
+
+
+Additional Note - curl http://169.254.169.254/latest/meta-data/public-ipv4
+curl ifconfig.me
+
+we can get the public ip of the instance using the command
